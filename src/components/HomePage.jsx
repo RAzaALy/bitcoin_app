@@ -3,14 +3,14 @@ import { useGetCryptosQuery } from "../services/cryptoApi";
 import millify from "millify";
 import { Typography, Row, Col, Statistic } from "antd";
 import { Link } from "react-router-dom";
-import { CryptoCurrency, News } from "../components";
+import { CryptoCurrency, News, Loader } from ".";
 const { Title } = Typography;
 
 const HomePage = () => {
   const { data, isFetching } = useGetCryptosQuery(12);
   const globalStats = data?.data?.stats;
   //   console.log(data, isFetching);
-  if (isFetching) return "Loading...";
+  if (isFetching) return <Loader />;
   return (
     <>
       <Title level={2} className="heading">
