@@ -9,7 +9,7 @@ In the project directory, you can run:
 ### `yarn start`
 
 Runs the app in the Live mode.\
-Open [https://bincoin-app-48b723.netlify.app](https://bincoin-app-48b723.netlify.app) to view it in the browser.
+Open [https://bitcoin-app-48b723.netlify.app] (live demo) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
