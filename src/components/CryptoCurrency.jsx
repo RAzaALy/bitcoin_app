@@ -43,7 +43,7 @@ const CryptoCurrency = ({ simplified }) => {
                 <Card
                   title={`${currency.rank}. ${currency.name}`}
                   extra={
-                    <img className="crypto-image" src={currency.iconUrl} />
+                    <img className="crypto-image" src={currency.iconUrl} alt={currency.name} />
                   }
                 >
                   <p>Price: {millify(currency.price)}</p>
